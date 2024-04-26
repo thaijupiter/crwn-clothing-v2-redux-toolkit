@@ -47,8 +47,6 @@ const PaymentForm = () => {
 
         if(paymentResult.error) {
             alert('Payment Failed');
-        } else if(amount === 0){
-            alert('Cart Empty')
         } else if (paymentResult.paymentIntent.status === 'succeeded') {
             alert('Payment Successful')
         }
